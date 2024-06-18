@@ -27,14 +27,17 @@ header {
     flex: 1 1 25%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    overflow: hidden;
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 .book img {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     transition: transform 0.3s ease;
+    height: 95%;
+    width: 100%;
+  
 }
 
 .book p {
@@ -52,14 +55,11 @@ header {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 930px) {
     .book {
-        flex: 1 1 calc(50% - 20px);
+        height: 51%;
+        width: 50%;
+      
     }
 }
 
-@media (max-width: 480px) {
-    .book {
-        flex: 1 1 100%;
-    }
-}
