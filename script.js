@@ -17,15 +17,12 @@ function search() {
         chemistry.style.display="none"
      }
      else {
-
         chemistry.style.display=""
-
       }
       if(!x[2].innerHTML.toLowerCase().includes(input)) {
         maths.style.display="none"
-     }
+      }
       else {
-
         maths.style.display=""
       }
     }
