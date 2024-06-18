@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Collection</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <h1>Book Collection</h1>
     </header>
+    <div class="search">
+        <input placeholder="Search Here!!" type="text" id="input" onkeyup="search()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
     <main>
-        <div class="subject">
-            <h2>Physics</h2>
+        <div class="subject" id="Physics">
+            <h2 class="options">Physics</h2>
             <div class="books">
                 <div class="book">
                     <img src="physics1.jpg" alt="Physics Book 1">
@@ -24,10 +29,10 @@
                 </div>
             </div>
         </div>
-        <div class="subject">
-            <h2>Chemistry</h2>
+        <div class="subject" id="Chemistry">
+            <h2 class="options">Chemistry</h2>
             <div class="books">
-                <div class="book">
+                <div class="book" >
                     <img src="chemistry1.jpg" alt="Chemistry Book 1" style="height: 850px;">
                     <p>Chemistry Book 1</p>
                 </div>
@@ -37,8 +42,8 @@
                 </div>
             </div>
         </div>
-        <div class="subject">
-            <h2>Maths</h2>
+        <div class="subject" id="Maths">
+            <h2 class="options">Maths</h2>
             <div class="books">
                 <div class="book">
                     <img src="maths1.jpg" alt="Maths Book 1">
@@ -51,6 +56,6 @@
             </div>
         </div>
     </main>
- <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
